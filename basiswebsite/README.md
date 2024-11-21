@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage
-  <img src="readme-images/Homepage.png" width="375px" alt="Homepage met bestel knop en vind jouw dichtbijzijnde locaties, bestelknop ">
+  <img src="readme-images/homepage.png" width="375px" alt="Homepage met bestel knop en vind jouw dichtbijzijnde locaties, bestelknop ">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Studentenkorting 
-  <img src="readme-images/Studentenkorting.png" width="375px" alt="Pagina met info over studentenkorting en allen locaties van starbucks">
+  <img src="readme-images/Ourcoffe.png" width="375px" alt="img, h1, h2 en p, soorten koffie ">
  
 </details>
 
@@ -58,6 +58,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Toegankelijkheid is een complexe en een belangrijke onderwerp binnen de design wereld, het is belangrijk om rekening te houden met alle doelgroepen inclusief mensen met dieverse beperkingen, zodat digitale content voor iedereen bruikbaar zijn. Een belangrijke aspect hiervan is de screenreader die slechtziende en blinden toegang biederen tot digitale content. Het werken met de screenreader was uitdagend, vooral omdat ik nog nooit erder met deze functionaliteit had gewerkt. Na veel uitproberen en onderzoeken is het mij gelukt om de verschillende highlights te bereiken via de knoppen command+option+control+ lin/re knop, Daarnaast heb ik geleerd hoe ik elementen in de rotor kan selecteren en hoe ik door de verschillende onderdelen kan navigeren.  
+
+WCAG checklist
+  <img src="readme-images/WCAG1.png" width="375px" alt=" content,global code ">
+  <img src="readme-images/WCAG2.png" width="375px" alt=" keyboard, mobiel and touch ">
+  <img src="readme-images/WCAG3.png" width="375px" alt=" headings, lists, images ">
+  <img src="readme-images/WCAG4.png" width="375px" alt=" media, controls ">
+  <img src="readme-images/WCAG5.png" width="375px" alt=" appearance, animation, color ">
+
+
+
+
+
 </details>
 
 
@@ -68,14 +81,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/scherm1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/scherm2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  <img src="readme-images/scherm2.2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 </details>
 
 
@@ -94,11 +106,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1  Aya |student 2 Patoune   |student 3Nasima | student 4  Yordi |
+  | Homepage Html  |Homepage starbucks  | ---            | ---           |
+  | bespreken      | en dit             | en ik dit      | en dan ik dat    |
+  | en checken     | dit als er tijd is | nog een punt   | dit wil ik zeker |
+  | ...            | ...                | ...            | ...              |
 
 
   ### Verslag van meeting

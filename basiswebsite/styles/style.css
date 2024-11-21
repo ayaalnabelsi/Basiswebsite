@@ -4,7 +4,9 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
+h1{
+	padding: 10%;
+}
 
 
 
@@ -28,4 +30,25 @@
 /****************/
 
 /* jouw code */
+
+main img{
+    max-width: 100%;
+    max-height:auto;
+}
+
+header{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between
+}
+
+header img{
+    max-width: 12%;
+    max-height: 50%;
+}
+
+a{
+	display: block;
+	margin-bottom: 10px;
+}
 
