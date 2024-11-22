@@ -1,0 +1,60 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+h1{
+	padding: 10%;
+}
+
+@fonts-face {
+font-family:" ", sans-sarif ;
+src: url(./fonts/Lato/Lato-regular.ttf) ;
+}
+
+h1{
+    font-family:" " ;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+main img{
+    max-width: 100%;
+    max-height:auto;
+}
+
+header{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between
+}
+
+header img{
+    max-width: 12%;
+    max-height: 50%;
+}
+
+a{
+	display: block;
+	margin-bottom: 10px;
+}
+
