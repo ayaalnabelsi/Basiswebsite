@@ -106,20 +106,22 @@ WCAG checklist
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1  Aya |student 2 Patoune   |student 3Nasima | student 4  Yordi |
-  | Homepage Html  |Homepage starbucks  | ---            | ---           |
-  | bespreken      | en dit             | en ik dit      | en dan ik dat    |
-  | en checken     | dit als er tijd is | nog een punt   | dit wil ik zeker |
-  | ...            | ...                | ...            | ...              |
+  | student 1  Aya |student 2 Patoune   |student3 Nasima 
+  | Homepage Html  |Homepage starbucks  Html bespreken 
+  | bespreken             
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ontvangen feedback:
+  
+  1- Kijken hoe ik mijn header navigatie ga fixen 
+  2- Kijken hoe ik een mobile menu en desktop menu ga maken. 
+  3- lijst maken voor de linkjes naar andere pagina's
+  4- List items in de details niet vergeten te sluiten 
+  5- Voor google maps blokje i-frame google maps gebruiken 
+  6- voor icoontjes betern svg's gebruiken 
 
 </details>
 
@@ -135,15 +137,24 @@ WCAG checklist
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  <img src="readme-images/grid-home.png"  alt=" Homepage img ">
+  <img src="readme-images/footer.png"  alt=" footer img ">
+
+  Wat ik nog lastig vind is het fixen van de images en de groene background color en hoe dat helemaal onder elkaar ga krijgen.
+  Verder wil ik nog uitproberen hoe ik de pijltjes aan de re kant kan zetten met behulp van grid.
+
+ 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 Aya  | student 2  Patoune    | student 3 Nasima
+  Ik wil uitleg over
+  hoe ik grid het beste
+  kan toepassen voor de
+  verschillende achter-
+  gronden
 
 
   ### Verslag van meeting
