@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "sodo-reg";
+    src: url("../fonts/sodo-regular.woff2");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "sodo-bold";
+    src: url("../fonts/sodo-bold.woff");
+    font-weight:700;
+}
+/* Geholpen door Sanne https://www.azfonts.net/fonts/sodo-sans/regular-307605/download */
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: "sodo-reg", sans-serif;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text: #111;
+    --secondarycolor-background: #006241;
+    --background-color: #ffff;
+    --color-background:#edebe9;  
+}
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1,
+h2,
+h3 {
+    font-family: "sodo-bold", sans-serif;
+}
+
+
+
+
+
+
+/********/
+/* MAIN */
+/********/
+/*Groene Background & a & H&P Styling*/
+
+article:nth-of-type(1) {
+    background-color: var(--secondarycolor-background);
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+article:nth-of-type(1) img{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    width: 100%;
+}
+
+article:nth-of-type(1) h1{
+    color: white;
+    margin:0;
+    padding:1em 1em 2em 1em;
+}
+
+article:nth-of-type(1) p{
+    color: white;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-family: sodo-bold, sans-serif;
+    font-size: large;
+    position: relative;
+    left:1em;
+    max-width: 8em;
+}
+
+article:nth-of-type(1) a {
+    background-color: var(--background-color);
+    color: black;
+}
+
+article:nth-of-type(2) {
+    background-color: var(--secondarycolor-background);
+    display: grid;
+    grid-template-rows: 30px 60px 60px auto auto auto;
+    grid-template-columns: 5% 55% 35% 5%;
+}
+
+article:nth-of-type(2) img{
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    border-radius: 2em;
+}
+
+article:nth-of-type(2) h2{
+color: white;
+grid-column: 2;
+grid-row: 1;
+}
+
+article:nth-of-type(2) h3{
+    color: white;
+    grid-column: 2;
+    grid-row: 5 ;
+}
+
+article:nth-of-type(2) p:nth-of-type(1){
+    color: white;
+    grid-column: 2;
+    grid-row: 2;
+
+}
+article:nth-of-type(2) p:nth-of-type(2){
+    color: white;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+article:nth-of-type(2) p:nth-of-type(3){
+    color: white;
+    grid-column: 2/4;
+    grid-row: 6;
+}
+
+article:nth-of-type(2) a {
+    background-color: var(--background-color);
+    color: black;
+}
+
+article:nth-of-type(2) p em {
+    background-color: green;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: "sodo-bold",sans-serif;
+}
+/* Geholpen door Sanne https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform*/
+
+article:nth-of-type(3) {
+    background-color: var(--color-background);
+}
+
+article:nth-of-type(3) img{
+    width: 100%;
+}
+
+article:nth-of-type(3) a {
+    background-color: var(--secondarycolor-background);
+    color: white;
+}
+
+article:nth-of-type(4) {
+    background-color: var(--secondarycolor-background);
+}
+
+article:nth-of-type(4) img{
+    width: 100%;
+}
+
+article:nth-of-type(4) h2{
+    color: white;
+}
+article:nth-of-type(4) p{
+    color:white;
+}
+
+article:nth-of-type(4) a {
+    background-color: var(--background-color);
+    color: black;
+}
+
+
+
+article:nth-of-type(5) img{
+    width: 100%;
+}
+
+article:nth-of-type(5) a {
+    background-color: var(--secondarycolor-background);
+    color:white;
+}
+
+article:nth-of-type(6) {
+    background-color: var(--secondarycolor-background);
+}
+
+article:nth-of-type(6) img{
+    width: 100%;
+}
+
+article:nth-of-type(6) h2{
+color: white;
+}
+
+article:nth-of-type(6) p{
+color: white;
+}
+
+article:nth-of-type(6) a {
+    background-color: var(--background-color);
+    color: black;
+}
+
+
+article:nth-of-type(7) img{
+    width: 100%;
+}
+
+article:nth-of-type(7) a {
+    background-color: var(--secondarycolor-background);
+    color: white;
+}
+
+
+article:nth-of-type(8) {
+    background-color: var(--secondarycolor-background);
+}
+
+article:nth-of-type(8) img{
+    width: 100%;
+}
+
+article:nth-of-type(8) h2{
+    color: white;
+}
+article:nth-of-type(8) p{
+    color: white;
+}
+
+article:nth-of-type(8) a {
+    background-color: var(--background-color);
+    color: black;
+    
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/*Buttons*/
+main a {
+    display: block;
+    margin: 1em;
+    background-color: #006241;
+    font-family:sodo-bold,sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.9em;
+    border-radius:3em;
+}
+
+
+
+
+nav img {
+    width: 80%;
+    height: 50%;
+}
+
+main {
+    display: grid;
+    gap:60px;
+}
+
+
+

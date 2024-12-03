@@ -140,7 +140,7 @@ WCAG checklist
   <img src="readme-images/grid-home.png"  alt=" Homepage img ">
   <img src="readme-images/footer.png"  alt=" footer img ">
 
-  Wat ik nog lastig vind is het fixen van de images en de groene background color en hoe dat helemaal onder elkaar ga krijgen.
+  Wat ik nog lastig vind is het fixen van de images en de groene background color en hoe ik dat helemaal onder elkaar ga krijgen.
   Verder wil ik nog uitproberen hoe ik de pijltjes aan de re kant kan zetten met behulp van grid.
 
  
@@ -149,7 +149,7 @@ WCAG checklist
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Aya  | student 2  Patoune    | student 3 Nasima
+  | student 1 Aya  
   Ik wil uitleg over
   hoe ik grid het beste
   kan toepassen voor de
@@ -160,10 +160,8 @@ WCAG checklist
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Code goed ordenen, uiteindelijk heb ik maar 3 stylescheet nodig in css
+  
 
 </details>
 

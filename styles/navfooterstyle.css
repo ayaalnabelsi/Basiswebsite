@@ -1,0 +1,112 @@
+ul:nth-of-type(1) {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+    flex-shrink: 0;
+}
+
+nav ul:nth-of-type(1) img {
+    max-width: 50%;
+}
+
+nav ul:nth-of-type(2) img {
+    max-width: 50%;
+}
+
+
+summary:nth-of-type()
+header a:hover {
+    color: #00704A;
+}
+
+
+
+footer:nth-of-type(1){
+    background-color:#1e3932;  
+    padding: 1em;
+    color: white; 
+}
+
+footer:nth-of-type(1) nav  {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+
+footer:nth-of-type(1) a{
+    display: block;
+    padding: 0.3em;
+    color: #9c9c9c;
+    font-size: small;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+footer:nth-of-type(1) img{
+    max-width: 30%;
+    height: auto;
+    margin-top: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+details:nth-of-type(3) {
+    border-bottom: 0.01em solid #9c9c9c;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+details:nth-of-type(1) ul{
+  padding-left: 0;
+  display: block;
+}
+details:nth-of-type(2) ul{
+    padding-left: 0;
+    display: block;
+  }
+  details:nth-of-type(3) ul{
+    padding-left: 0;
+    display: block;
+  }
+  
+  
+
+
+
+
+
+/* Nav Pijltje Styling*/
+summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    transition: 0.2s;
+    filter: invert(1); 
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert*/
+}
+
+details[open]>summary::after {
+    transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Geholpen door sybren https://codepen.io/SitePoint/pen/gOqYGPZ */
