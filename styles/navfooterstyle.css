@@ -1,13 +1,20 @@
+
 ul:nth-of-type(1) {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
     list-style: none;
     flex-shrink: 0;
+    align-items: center;
+}
+
+a:nth-of-type(1){
+    text-decoration: none;
+    color: black;
 }
 
 nav ul:nth-of-type(1) img {
-    max-width: 50%;
+    width: 24px;
 }
 
 nav ul:nth-of-type(2) img {
@@ -15,10 +22,7 @@ nav ul:nth-of-type(2) img {
 }
 
 
-summary:nth-of-type()
-header a:hover {
-    color: #00704A;
-}
+
 
 
 
@@ -52,7 +56,12 @@ footer:nth-of-type(1) img{
 }
 
 
-
+footer ul:last-of-type{
+    display: flex;
+    justify-content: row;
+    list-style: none;
+    gap:1em;
+}
 
 details:nth-of-type(3) {
     border-bottom: 0.01em solid #9c9c9c;
@@ -73,6 +82,7 @@ details:nth-of-type(2) ul{
     padding-left: 0;
     display: block;
   }
+  
   
   
 
@@ -107,6 +117,11 @@ details[open]>summary::after {
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+summary:nth-of-type()
+header a:hover {
+    color: #00704A;
 }
 
 /* Geholpen door sybren https://codepen.io/SitePoint/pen/gOqYGPZ */

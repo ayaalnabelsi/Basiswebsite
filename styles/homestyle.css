@@ -94,13 +94,14 @@ article:nth-of-type(2) {
     display: grid;
     grid-template-rows: 30px 60px 60px auto auto auto;
     grid-template-columns: 5% 55% 35% 5%;
+    border-radius: 1em;
 }
 
 article:nth-of-type(2) img{
     width: 100%;
     grid-column: 1/5;
     grid-row: 1/5;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 article:nth-of-type(2) h2{
