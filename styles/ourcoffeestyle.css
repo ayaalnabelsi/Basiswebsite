@@ -7,6 +7,7 @@ main:nth-of-type(1) p{
     color: dimgray;
 }
 
+
 section:nth-of-type(1) a{
     color: green;
 }
@@ -156,16 +157,3 @@ article:nth-of-type(6) a{
     padding: 1em;
     margin-bottom: 3em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
