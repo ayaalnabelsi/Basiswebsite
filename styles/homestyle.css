@@ -1,55 +1,3 @@
-@font-face {
-    font-family: "sodo-reg";
-    src: url("../fonts/sodo-regular.woff2");
-    font-weight:400;
-}
-
-@font-face {
-    font-family: "sodo-bold";
-    src: url("../fonts/sodo-bold.woff");
-    font-weight:700;
-}
-/* Geholpen door Sanne https://www.azfonts.net/fonts/sodo-sans/regular-307605/download */
-
-/**************/
-/* CSS REMEDY */
-/**************/
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    font-family: "sodo-reg", sans-serif;
-}
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-    /* startje */
-    --color-text: #111;
-    --secondarycolor-background: #006241;
-    --background-color: #ffff;
-    --color-background:#edebe9;  
-}
-
-
-/********************/
-/* ALGEMENE STYLING */
-/********************/
-
-h1,
-h2,
-h3 {
-    font-family: "sodo-bold", sans-serif;
-}
-
-
-
-
-
-
 /********/
 /* MAIN */
 /********/
@@ -57,31 +5,34 @@ h3 {
 
 article:nth-of-type(1) {
     background-color: var(--secondarycolor-background);
+    height: 80%;
     display: grid;
     grid-template-rows: auto auto auto;
+   
 }
 
 article:nth-of-type(1) img{
     grid-column-start: 1;
     grid-row-start: 3;
     width: 100%;
+    height: 80%;
 }
 
 article:nth-of-type(1) h1{
     color: white;
     margin:0;
-    padding:1em 1em 2em 1em;
+    padding:1em 2em 2em 1em;
 }
 
 article:nth-of-type(1) p{
     color: white;
     grid-column-start: 1;
     grid-row-start: 3;
-    font-family: sodo-bold, sans-serif;
-    font-size: large;
+    font-family: sodo-regular, sans-serif;
     position: relative;
-    left:1em;
-    max-width: 8em;
+    left:0.3em;
+    font-size: x-large;
+    max-width: 7.3em;
 }
 
 article:nth-of-type(1) a {
@@ -260,9 +211,6 @@ main a {
     padding: 0.9em;
     border-radius:3em;
 }
-
-
-
 
 nav img {
     width: 80%;

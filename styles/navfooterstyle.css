@@ -1,3 +1,39 @@
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+@font-face {
+    font-family: "sodo-reg";
+    src: url("../fonts/sodo-regular.woff2");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "sodo-bold";
+    src: url("../fonts/sodo-bold.woff");
+    font-weight:700;
+}
+/* Geholpen door Sanne https://www.azfonts.net/fonts/sodo-sans/regular-307605/download */
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: "sodo-reg", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "sodo-bold", sans-serif;
+}
+
+body{
+    background-color: ghostwhite;
+}
 
 ul:nth-of-type(1) {
     display: flex;
