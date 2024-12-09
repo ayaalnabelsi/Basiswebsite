@@ -1,171 +1,381 @@
-/********/
-/* MAIN */
-/********/
-/*Groene Background & a & H&P Styling*/
-
 article:nth-of-type(1) {
     background-color: var(--secondarycolor-background);
     height: 80%;
     display: grid;
     grid-template-rows: auto auto auto;
-   
+
 }
 
-article:nth-of-type(1) img{
+article:nth-of-type(1) img {
     grid-column-start: 1;
     grid-row-start: 3;
     width: 100%;
-    height: 80%;
+    height: 90%;
 }
 
-article:nth-of-type(1) h1{
+article:nth-of-type(1) h1 {
     color: white;
-    margin:0;
-    padding:1em 2em 2em 1em;
+    margin: 0;
+    padding: 1em 2em 2em 1em;
 }
 
-article:nth-of-type(1) p{
+article:nth-of-type(1) p {
     color: white;
     grid-column-start: 1;
     grid-row-start: 3;
     font-family: sodo-regular, sans-serif;
     position: relative;
-    left:0.3em;
-    font-size: x-large;
-    max-width: 7.3em;
+    left: 0.4em;
+    bottom: 0.7em;
+    font-size: xx-large;
+    max-width: 6.6em;
+    /*geholpen door Sanne*/
 }
+
 
 article:nth-of-type(1) a {
     background-color: var(--background-color);
     color: black;
 }
 
+
 article:nth-of-type(2) {
     background-color: var(--secondarycolor-background);
     display: grid;
     grid-template-rows: 30px 60px 60px auto auto auto;
     grid-template-columns: 5% 55% 35% 5%;
-    border-radius: 1em;
+    /*Geholpen door Sybren*/
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-article:nth-of-type(2) img{
+
+article:nth-of-type(2) img {
     width: 100%;
     grid-column: 1/5;
     grid-row: 1/5;
-    border-radius: 1em;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    margin-top: -4em;
 }
 
-article:nth-of-type(2) h2{
-color: white;
-grid-column: 2;
-grid-row: 1;
-}
-
-article:nth-of-type(2) h3{
+/*starbucks*/
+article:nth-of-type(2) h2 {
     color: white;
     grid-column: 2;
-    grid-row: 5 ;
+    grid-row: 1;
+    font-size: xx-large;
+    margin-left: 0.1em;
+    letter-spacing: 0.1em;
+    margin-top: -1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-article:nth-of-type(2) p:nth-of-type(1){
+article:nth-of-type(2) h2 em {
+    font-size: small;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: "sodo-bold", sans-serif;
+    vertical-align: super;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align*/
+}
+
+/*Stanley*/
+article:nth-of-type(2) h3 {
     color: white;
     grid-column: 2;
     grid-row: 2;
-
+    margin-left: 3em;
+    margin-top: -0.5em;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-article:nth-of-type(2) p:nth-of-type(2){
+
+article:nth-of-type(2) h3 em {
+    font-size: small;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: "sodo-bold", sans-serif;
+}
+
+article img:nth-of-type(2) {
+    max-width: 8%;
+    position: relative;
+    top: 5em;
+    left: 4em;
+}
+
+article:nth-of-type(2) img:nth-of-type(3) {
+    max-width: 10%;
+    position: relative;
+    left: 1em;
+    top: 4.5em;
+}
+
+article:nth-of-type(2) p:nth-of-type(1) {
     color: white;
     grid-column: 2;
     grid-row: 3;
+    padding-left: 5em;
+    font-size: medium;
+    margin-top: -2em;
+    text-align: center;
 }
 
-article:nth-of-type(2) p:nth-of-type(3){
+article:nth-of-type(2) p:nth-of-type(2) {
+    color: white;
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 3em;
+    white-space: nowrap;
+    margin-top: -1em;
+    text-align: center;
+    font-size: medium;
+}
+
+
+article:nth-of-type(2) p:nth-of-type(3) {
+    color: white;
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+    position: relative;
+    margin-top: -5em;
+    left: 5em;
+    font-size: xx-small;
+    font-family: "sodo-regular", sans-serif;
+
+}
+
+article:nth-of-type(2) p:nth-of-type(3) em {
+    background-color: #006241;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: larger;
+    font-family: "sodo-bold", sans-serif;
+}
+
+/* Geholpen door Sanne https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform*/
+
+article:nth-of-type(2) h4 {
+    color: white;
+    grid-column: 2;
+    grid-row: 5;
+    line-height: 1.5em;
+    font-family: "sodo-regular", sans-serif;
+    font-size: large;
+}
+
+article:nth-of-type(2) p:nth-of-type(4) {
     color: white;
     grid-column: 2/4;
     grid-row: 6;
+    font-size: small;
+    margin-top: -1em;
+    padding-bottom: 1em;
+
 }
 
 article:nth-of-type(2) a {
     background-color: var(--background-color);
     color: black;
+    margin-top: 3em;
 }
 
-article:nth-of-type(2) p em {
-    background-color: green;
-    text-transform: uppercase;
-    font-style: normal;
-    font-family: "sodo-bold",sans-serif;
-}
-/* Geholpen door Sanne https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform*/
+
+
+
 
 article:nth-of-type(3) {
-    background-color: var(--color-background);
+    background-color: #f7f7f7;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-article:nth-of-type(3) img{
+article:nth-of-type(3) img {
     width: 100%;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    margin-top: -2em;
 }
 
 article:nth-of-type(3) a {
     background-color: var(--secondarycolor-background);
     color: white;
+    margin-top: 3em;
 }
+
+article:nth-of-type(3) h2 {
+    margin-left: 0.5em;
+    font-size: large;
+    font-family: "sodo-regular", sans-serif;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
+article:nth-of-type(3) h2 em {
+    font-size: xx-small;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: "sodo-bold", sans-serif;
+    vertical-align: super;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align*/
+}
+
+article:nth-of-type(3) p {
+    margin-left: 0.5em;
+    font-size: small;
+    font-family: "sodo-regular", sans-serif;
+    line-height: 1.5em;
+    margin-left: 1.5em;
+    padding-bottom: 1em;
+}
+
 
 article:nth-of-type(4) {
     background-color: var(--secondarycolor-background);
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-article:nth-of-type(4) img{
+article:nth-of-type(4) img {
     width: 100%;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    margin-top: -2em;
 }
 
-article:nth-of-type(4) h2{
+article:nth-of-type(4) h2 {
     color: white;
+    margin-left: 0.8em;
+    font-size: large;
 }
-article:nth-of-type(4) p{
-    color:white;
+
+article:nth-of-type(4) p {
+    color: white;
+    margin-left: 1em;
+    font-size: small;
+    padding-bottom: 1em;
 }
+
 
 article:nth-of-type(4) a {
     background-color: var(--background-color);
     color: black;
+    font-family: "sodo-regular", sans-serif;
+    font-weight: 600;
 }
 
 
+article:nth-of-type(5) {
+    background-color: #f7f7f7;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
-article:nth-of-type(5) img{
-    width: 100%;
+article:nth-of-type(5) h2 {
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-top: -1.5em;
+    color: white;
+    font-size: x-large;
+    padding: 3.5em;
+    background-color: #1e3932;
+}
+
+article:nth-of-type(5) h3 {
+    padding-left: 1em;
 }
 
 article:nth-of-type(5) a {
     background-color: var(--secondarycolor-background);
-    color:white;
+    color: white;
+    margin-top: em;
+}
+
+article:nth-of-type(5) p {
+    padding-left: 1em;
+    font-size: small;
+    padding-bottom: 1em;
 }
 
 article:nth-of-type(6) {
     background-color: var(--secondarycolor-background);
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-article:nth-of-type(6) img{
+article:nth-of-type(6) img {
     width: 100%;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    margin-top: -2em;
 }
 
-article:nth-of-type(6) h2{
-color: white;
+article:nth-of-type(6) h2 {
+    color: white;
+    margin-left: 1em;
+    font-size: large;
 }
 
-article:nth-of-type(6) p{
-color: white;
+article:nth-of-type(6) p {
+    color: white;
+    margin-left: 1.4em;
+    font-size: small;
+    padding-bottom: 1em;
 }
 
 article:nth-of-type(6) a {
     background-color: var(--background-color);
     color: black;
+    
 }
 
-
-article:nth-of-type(7) img{
+article:nth-of-type(7) {
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #f7f7f7;
+}
+article:nth-of-type(7) h2 {
+   margin-left: 1em;
+}
+article:nth-of-type(7) p{
+    margin-left: 1em;
+    font-size: small;
+    padding-bottom: 1em;
+ }
+ 
+article:nth-of-type(7) img {
     width: 100%;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    margin-top: -2em;
 }
 
 article:nth-of-type(7) a {
@@ -175,25 +385,33 @@ article:nth-of-type(7) a {
 
 
 article:nth-of-type(8) {
-    background-color: var(--secondarycolor-background);
+    background-color: var(--color-8);
+    margin-bottom: 1em;
+    padding-bottom: 5em;
+    margin-top: -2em;
 }
 
-article:nth-of-type(8) img{
-    width: 100%;
+
+article:nth-of-type(8) h2 {
+    color: white;
+    padding-left: 1em;
 }
 
-article:nth-of-type(8) h2{
+article:nth-of-type(8) p {
     color: white;
-}
-article:nth-of-type(8) p{
-    color: white;
+    padding-left: 1.5em;
+    padding-bottom: 5em;
+    font-size: small;
+  
 }
 
 article:nth-of-type(8) a {
     background-color: var(--background-color);
     color: black;
-    
+    margin-top: -4em;
 }
+
+
 
 
 /****************/
@@ -205,11 +423,11 @@ main a {
     display: block;
     margin: 1em;
     background-color: #006241;
-    font-family:sodo-bold,sans-serif;
+    font-family: sodo-bold, sans-serif;
     text-align: center;
     text-decoration: none;
     padding: 0.9em;
-    border-radius:3em;
+    border-radius: 3em;
 }
 
 nav img {
@@ -219,8 +437,5 @@ nav img {
 
 main {
     display: grid;
-    gap:60px;
+    gap: 60px;
 }
-
-
-
