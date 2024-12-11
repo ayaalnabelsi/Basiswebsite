@@ -26,6 +26,8 @@
     --color-8:#006241; 
 }
 
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -50,22 +52,22 @@ h3 {
 /********************/
 
 header {
+    font-size: small;
     position: relative;
-    height: 80px;
+    height: 5em;
     padding: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9c9c9c; 
     display: flex;
     padding-bottom: 3em;
     padding-top: 3em;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    margin-bottom: 2em;
 }
 
 header ul {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
 }
 
 header nav ul {
@@ -79,12 +81,13 @@ header nav ul {
 
 header:nth-of-type(1) a {
     font-size: medium;
-    font-family: sodo-bold, sans-serif;
+    font-family: "sodo-bold", sans-serif;
 }
 
 
 header nav {
     width: 100%;
+    display: flex;
 }
 
 
@@ -98,6 +101,27 @@ header ul:nth-of-type(1) {
     font-size: small;
 }
 
+header li:nth-of-type(1) img {
+    max-width: 2em;
+    height: auto;
+    margin-left: 1em;
+}
+
+
+header li:nth-of-type(2) {
+    margin-left: auto;
+    text-align: right;
+}
+
+/*menu icon*/
+header li:nth-of-type(2) img {
+    position: fixed;
+    max-width: 3em;
+    height: auto;
+    margin-right: 2em;
+    left: 96em;
+    top: 0.1em;
+} 
 
 header ul li:nth-of-type(8) {
     display: flex;
@@ -107,33 +131,7 @@ header ul li:nth-of-type(8) {
 
 header ul li:nth-of-type(8) a {
     display: flex;
-    gap: 0.5em;
     justify-content: center;
-}
-
-
-header li:nth-of-type(1) {
-    flex: 1;
-}
-
-header li:nth-of-type(1) img {
-    max-width: 3em;
-    height: auto;
-    margin-left: 1em;
-}
-
-header li:nth-of-type(2) {
-    margin-left: auto;
-    text-align: right;
-}
-
-header li:nth-of-type(2) img {
-    max-width: 3em;
-    height: auto;
-    margin-right: 1em;
-    position: relative;
-    left: 96em;
-    top: 0.1em;
 }
 
 header li:nth-of-type(8) {
@@ -148,7 +146,7 @@ header li:nth-of-type(8) img {
 
 header li:nth-of-type(8) p {
     font-size: medium;
-    font-family: sodo-regular, sans-serif;
+    font-family: "sodo-regular", sans-serif;
 }
 
 header li:nth-of-type(9) {
@@ -188,7 +186,7 @@ header details summary:nth-of-type(1) {
     gap: 1em;
     cursor: pointer;
     font-size: medium;
-    font-family: sodo-bold, sans-serif;
+    font-family: "sodo-bold", sans-serif;
 }
 
 
@@ -197,7 +195,7 @@ header details:nth-of-type(1) a {
     display: block;
     background-color: white;
     padding: 1em;
-    font-family: sodo-regular, sans-serif;
+    font-family: "sodo-regular", sans-serif;
     font-size: medium;
 
 
@@ -212,7 +210,7 @@ header details:nth-of-type(1) a:nth-of-type(2) {
 header details:nth-of-type(2) a {
     padding-right: 3em;
     background-color: white;
-    font-family: sodo-regular, sans-serif;
+    font-family: "sodo-regular", sans-serif;
     padding: 1.5em;
 
 }
@@ -238,10 +236,6 @@ header details:nth-of-type(2) img {
 
 
 
-
-
-
-
 /********************/
 /* FOOTER */
 /********************/
@@ -251,26 +245,14 @@ footer {
     padding: 1em;
     color: white;
     position: relative;  
-    margin-top: 2em;
-}
-footer:first-of-type(1)a{
-    
     display: grid;
-    height: auto;
-    position: relative;
-    right: 4em;
-    padding: 0.2em;
-    margin-left: 1em;
-    max-width: 40%;
-    margin-top: -1em;
-    margin-right: -1em;
 
 }
+
 
 /*Social media icons*/
 footer ul:first-of-type {
     display: flex;
-    justify-content: flex-start;
     list-style: none;
     padding: 2em;
     margin-left: -1em;
@@ -296,6 +278,7 @@ footer:nth-of-type(1) img {
     margin-right: -1em;
 }
 
+/*Privacy policy etc*/
 footer:nth-of-type(1) a {
     display: block;
     padding: 0.3em;
@@ -306,35 +289,22 @@ footer:nth-of-type(1) a {
 }
 
 
-footer ul:last-of-type {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 0.5em;
-    margin: 0;
-    padding: 0;
-}
-
-footer ul:last-of-type img {
-    max-width: 4em;  
-    height: auto;
-    
-}
-
 footer details:nth-of-type(1) {
     margin-top: -3em;
 }
 
+/*over ons ul*/
 footer details:nth-of-type(1) ul {
     padding-left: 0;
     display: block;
 }
-
+/*Contact  ul*/
 footer details:nth-of-type(2) ul {
     padding-left: 0;
     display: block;
 }
 
+/*Sociale impact ul*/
 
 footer details:nth-of-type(3) ul {
     padding-left: 0;
@@ -345,6 +315,23 @@ footer details:nth-of-type(3) {
     border-bottom: 0.01em solid #9c9c9c;
     padding-bottom: 1em;
     margin-bottom: 1em;
+}
+
+/*Home en location icon*/
+footer ul:last-of-type {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer ul:last-of-type img {
+    max-width: 4em;  
+    height: auto;
+    
 }
 
 /*  Pijltje Styling*/

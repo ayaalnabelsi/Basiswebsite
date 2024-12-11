@@ -23,7 +23,7 @@ article:nth-of-type(1) p {
     color: white;
     grid-column-start: 1;
     grid-row-start: 3;
-    font-family: sodo-regular, sans-serif;
+    font-family: "sodo-regular", sans-serif;
     position: relative;
     left: 0.4em;
     bottom: 0.7em;
@@ -350,7 +350,7 @@ article:nth-of-type(6) p {
 article:nth-of-type(6) a {
     background-color: var(--background-color);
     color: black;
-    
+
 }
 
 article:nth-of-type(7) {
@@ -362,15 +362,17 @@ article:nth-of-type(7) {
     margin-right: 1em;
     background-color: #f7f7f7;
 }
+
 article:nth-of-type(7) h2 {
-   margin-left: 1em;
+    margin-left: 1em;
 }
-article:nth-of-type(7) p{
+
+article:nth-of-type(7) p {
     margin-left: 1em;
     font-size: small;
     padding-bottom: 1em;
- }
- 
+}
+
 article:nth-of-type(7) img {
     width: 100%;
     border-top-left-radius: 0.8em;
@@ -389,7 +391,11 @@ article:nth-of-type(8) {
     margin-bottom: 1em;
     padding-bottom: 5em;
     margin-top: -2em;
+    border-top-right-radius:  1em;
+    border-top-left-radius:  1em;
+   
 }
+
 
 
 article:nth-of-type(8) h2 {
@@ -402,7 +408,8 @@ article:nth-of-type(8) p {
     padding-left: 1.5em;
     padding-bottom: 5em;
     font-size: small;
-  
+   
+
 }
 
 article:nth-of-type(8) a {
@@ -411,7 +418,11 @@ article:nth-of-type(8) a {
     margin-top: -4em;
 }
 
-
+article:nth-of-type(8) iframe {
+    border-top-right-radius:  1em;
+    border-top-left-radius:  1em; 
+    
+}
 
 
 /****************/
@@ -423,7 +434,7 @@ main a {
     display: block;
     margin: 1em;
     background-color: #006241;
-    font-family: sodo-bold, sans-serif;
+    font-family: "sodo-bold", sans-serif;
     text-align: center;
     text-decoration: none;
     padding: 0.9em;

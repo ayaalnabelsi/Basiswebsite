@@ -160,7 +160,7 @@ WCAG checklist
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Code goed ordenen, uiteindelijk heb ik maar 3 stylescheet nodig in css
+  - Code goed ordenen, uiteindelijk heb ik  3 stylescheet nodig in css
   
 
 </details>
@@ -177,9 +177,18 @@ WCAG checklist
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+
+- Gebruikt duidelijke taal
+- Inhoud van knoppen bestaat uit een a. href
+- Elke pagina heeft een titel, h1, h2, h3
+- Er komt een focus stijl om tekst heen en gaat in goede volgorde
+- De website kan in elke gewenste richting omgedrijt worden
+- Er is genoeg ruimte tussen elementen, er wordt 1 h1 per pagina gebruikt
+- Er wordt gebruik gemaakt van lijstelementen ul, li, 
+- Images hebben een alt attribuut
+- Er wordt een a element voor link gebruikt
+
 </details>
-
-
 
 
 
@@ -195,21 +204,24 @@ WCAG checklist
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 Aya              | student 2 Patoune         
+
+  |image in de footer           Hamburgermenu 
+  werkt niet mee, en nav
+  lukt niet helemaal         
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Oefen met @media om je website responsieve te maken
+  - footer summary::after regel 360 het linkje daar laten staan wordt lastig met stijling als je t in html zet
 
+  <img src="readme-images/IMG_1.jpg" width="375px" alt="controls">
+   <img src="readme-images/IMG_2.jpg" width="375px" alt="Appearance">
+     <img src="readme-images/IMG_3.jpg" width="375px" alt="Headings">
+       <img src="readme-images/IMG_4.jpg" width="375px" alt="Content">
+        
 </details>
 
 
@@ -226,15 +238,23 @@ WCAG checklist
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ - ik heb geleerd hoe ik zo'n footer kan maken met behulp van details en summary
+ - ik heb geleerd hoe ik een witte background kan crieeren achter een img
+ - ik heb veel geleerd over details, artickels en summary 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+   <img src="readme-images/footer eind.png" width="375px" alt="Footer">
+   <img src="readme-images/ourcoffee.png" width="375px" alt="Ourcoffee">
+   
+  
+
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Ik vond dit stukje vooral het moeilijkst, het was ingewikkeld om het te stijlen net als de orginele website, dankzij de hulp van de studentassistent is het mij gelukt om deze voor elkaar te krijgen. 
+
+  <img src="readme-images/Scherm­afbeelding 2024-12-10 om 11.39.43.png" width="375px" alt="Grid">
 </details>
 
 
@@ -245,13 +265,30 @@ WCAG checklist
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
+1.  <!--https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align--> 
+2. <!--https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform-->
+3. <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert -->
+4. <!-- https://codepen.io/SitePoint/pen/gOqYGPZ -->
+5. <!--https://www.svgrepo.com/svg/473799/starbucks?edit=true-->
+6. <!--https://www.svgrepo.com/svg/532540/location-pin-alt-1?edit=true-->
+7. <!-- https://www.svgrepo.com/svg/453655/world-->
+8. <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br-->
+9. <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article-->
+10.<!--https://www.maps.ie/create-google-map-->
+11.<!--https://www.svgrepo.com/svg/473799/starbucks?edit=true-->
+12.<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details*/-->
+13.<!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target -->
+14.<!--https://www.svgrepo.com/svg/499947/front-page?edit=true-->
+15.  <!--https://www.svgrepo.com/svg/532539/location-pin-->
+16.  <!--https://www.svgrepo.com/svg/473799/starbucks?edit=true-->
+17.  <!--https://www.svgrepo.com/svg/532540/location-pin-alt-1?edit=true-->
+18.  <!-- https://www.svgrepo.com/svg/453655/world-->
+19.  <!--https://www.svgrepo.com/svg/473799/starbucks?edit=true-->
+20.  <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details*/-->
+21.  <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target -->
+22. <!--https://www.svgrepo.com/svg/499947/front-page?edit=true-->
+23. <!--https://www.svgrepo.com/svg/532539/location-pin-->
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
 
 </details>
