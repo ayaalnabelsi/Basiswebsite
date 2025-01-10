@@ -18,12 +18,18 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    /* startje */
-    --color-text: #111;
+
+    color-scheme: light dark;
+    --color-8: light-dark(#006241, gold);
+
     --secondarycolor-background: #00754a;
+    --footer-background: #1e3932;
     --background-color: #ffff;
-    --color-background: #edebe9;
-    --color-8:#006241; 
+    --color-text: #111;
+    --bottom-color: #9c9c9c;
+    --ourcoffeep-background: dimgray;
+    --background-color2: #006241;
+    --home-background: #f7f7f7;
 }
 
 
@@ -38,6 +44,10 @@
     font-family: "sodo-reg", sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 h1,
 h2,
@@ -52,287 +62,201 @@ h3 {
 /********************/
 
 header {
-    font-size: small;
-    position: relative;
-    height: 5em;
-    padding: 1em;
-    border-bottom: 1px solid #9c9c9c; 
-    display: flex;
-    padding-bottom: 3em;
-    padding-top: 3em;
-    justify-content:center;
-    align-items: center;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-    gap: 3em;
-}
-
-header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    padding-left: 0;
+    padding-right: 1em;
 }
 
-header:nth-of-type(1) a {
-    font-size: medium;
-    font-family: "sodo-bold", sans-serif;
+/*Starbucks img*/
+header>a:nth-of-type(1) svg {
+    width: 3em;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
-
-header nav {
-    width: 100%;
-    display: flex;
-}
-
-
-header ul:nth-of-type(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: small;
-}
-
-header li:nth-of-type(1) img {
-    max-width: 2em;
-    height: auto;
-    margin-left: 1em;
-}
-
-
-header li:nth-of-type(2) {
-    margin-left: auto;
-    text-align: right;
-}
 
 /*menu icon*/
-header li:nth-of-type(2) img {
-    position: fixed;
-    max-width: 3em;
-    height: auto;
-    margin-right: 2em;
-    left: 96em;
-    top: 0.1em;
-} 
-
-header ul li:nth-of-type(8) {
-    display: flex;
-    align-items: center;
-
-}
-
-header ul li:nth-of-type(8) a {
-    display: flex;
-    justify-content: center;
-}
-
-header li:nth-of-type(8) {
-    padding-right: 1em;
-    padding-left: 10em;
-}
-
-header li:nth-of-type(8) img {
-    max-width: 2em;
-    height: auto;
-}
-
-header li:nth-of-type(8) p {
-    font-size: medium;
-    font-family: "sodo-regular", sans-serif;
-}
-
-header li:nth-of-type(9) {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-
-}
-
-header li:nth-of-type(9) img {
-    max-width: 1em;
-    height: auto;
-}
-
-header li:nth-of-type(9) p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-
-
-
-header a:nth-of-type(1) {
-    text-decoration: none;
-    color: black;
-    display: flex;
-
-}
-
-header a:nth-of-type(1) img {
-    max-width: 3em;
-}
-
-
-header details summary:nth-of-type(1) {
-    display: flex;
-    gap: 1em;
+nav>button {
+    width: 50px;
+    background: none;
+    border: none;
     cursor: pointer;
-    font-size: medium;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    position: fixed;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    font-size: small;
+}
+
+nav ul:nth-of-type(1) {
+    padding-left: 40px;
+}
+/*Meer&NL*/
+header details summary {
     font-family: "sodo-bold", sans-serif;
+    font-weight: 600;
+}
+
+/*Vind een winkel*/
+header p {
+    font-family: "sodo-bold", sans-serif;
+    font-weight: 600;
+}
+
+/*a in de ul*/
+nav li a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1em;
+    font-family: "sodo-bold", sans-serif;
+    font-weight: 600;
 }
 
 
+/*wereldbal en location icon*/
+nav ul img {
+    width: 2.5em;
+    height: auto;
+}
 
-header details:nth-of-type(1) a {
+/* Pijltje Styling */
+summary {
     display: block;
-    background-color: white;
-    padding: 1em;
-    font-family: "sodo-regular", sans-serif;
-    font-size: medium;
-
+    position: relative;
+    cursor: pointer;
+    padding-right: 1.5em;
 
 }
 
-header details:nth-of-type(1) a:nth-of-type(2) {
-    text-decoration: none;
-    color: #111;
+summary::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 1em;
+    transform: translateY(-50%);
+    width: 0.9em;
+    height: 1em;
+    background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg');
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+}
+
+details[open]>summary::after {
+    transform: rotate(180deg);
 }
 
 
-header details:nth-of-type(2) a {
-    padding-right: 3em;
-    background-color: white;
-    font-family: "sodo-regular", sans-serif;
-    padding: 1.5em;
-
+@media (min-width: 400px) {
+    nav ul {
+        display: none;
+        position: static;
+        flex-direction: row;
+        gap: 2em;
+        translate: unset;
+    }
 }
 
-header details:nth-of-type(2) {
-    margin-right: 5em;
+@media (min-width: 800px) {
+    nav ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 2em;
+        translate: unset;
+    }
 
-
+    nav>button {
+        display: none;
+    }
 }
 
-header details:nth-of-type(2) a:nth-of-type(2) {
-    text-decoration: none;
-    color: #111;
-}
 
-header details:nth-of-type(2) img {
-    max-width: 3em;
-}
-
-
-
-
-
+/*https://codepen.io/shooft/pen/GRbxLYV*/
 
 
 /********************/
 /* FOOTER */
 /********************/
 footer {
-    margin-top: 3em;
-    background-color: #1e3932;
+    margin-top: 1em;
+    background-color: var(--footer-background);
     padding: 1em;
-    color: white;
-    position: relative;  
-    display: grid;
-
-}
-
-
-/*Social media icons*/
-footer ul:first-of-type {
-    display: flex;
-    list-style: none;
-    padding: 2em;
-    margin-left: -1em;
-    margin: 0;
-    gap: 0.09em;
-}
-
-footer ul:nth-of-type(1) img {
-    max-width: 2em;
-    height: auto;
-    margin-bottom: -1em;
-}
-
-footer:nth-of-type(1) img {
-    display: grid;
-    height: auto;
+    color: var(--background-color);
     position: relative;
-    right: 4em;
-    padding: 0.2em;
-    margin-left: 1em;
-    max-width: 40%;
-    margin-top: -1em;
-    margin-right: -1em;
+    display: grid;
+    margin-bottom: 7em;
+    padding-bottom: 5em;
 }
+
+/* SB logo link */
+footer>a:nth-of-type(1) {
+    display: block;
+}
+
+footer>a:nth-of-type(1) svg {
+    width: 3em;
+    aspect-ratio: 1/1;
+    /*Geholpen door Sanne*/
+    margin-left: 0.7em;
+    margin-bottom: 1em;
+}
+
+
 
 /*Privacy policy etc*/
-footer:nth-of-type(1) a {
+footer>a:not(:nth-of-type(1)) {
     display: block;
     padding: 0.3em;
-    color: #9c9c9c;
+    color: var(--bottom-color);
     font-size: small;
     text-decoration: none;
     margin-bottom: 1em;
 }
 
 
-footer details:nth-of-type(1) {
-    margin-top: -3em;
-}
 
 /*over ons ul*/
-footer details:nth-of-type(1) ul {
+footer details ul {
     padding-left: 0;
-    display: block;
-}
-/*Contact  ul*/
-footer details:nth-of-type(2) ul {
-    padding-left: 0;
-    display: block;
-}
-
-/*Sociale impact ul*/
-
-footer details:nth-of-type(3) ul {
-    padding-left: 0;
-    display: block;
-}
-
-footer details:nth-of-type(3) {
-    border-bottom: 0.01em solid #9c9c9c;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-/*Home en location icon*/
-footer ul:last-of-type {
-    display: flex;
-    justify-content: center;
+    display: grid;
     list-style: none;
     gap: 0.5em;
     margin: 0;
     padding: 0;
-    
 }
 
-footer ul:last-of-type img {
-    max-width: 4em;  
-    height: auto;
-    
+
+footer details:nth-of-type(3) {
+    border-bottom: 0.01em solid var(--bottom-color);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
+
+footer details a {
+    display: block;
+    padding: 0.3em;
+    color: var(--bottom-color);
+    font-size: small;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
 
 /*  Pijltje Styling*/
 footer summary {
@@ -365,25 +289,47 @@ footer summary::-webkit-details-marker {
 }
 
 footer summary:nth-of-type() header a:hover {
-    color: #00704A;
+    color: var(--secondarycolor-background);
 }
 
 /* Geholpen door sybren https://codepen.io/SitePoint/pen/gOqYGPZ */
 
 
-
-
-
-
-/*@media(min-width: 400px){
-    body{
-        background-color: red;
-        display: none;
-    }
+/*Social media icons*/
+footer>ul:first-of-type {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
 }
-@media(min-width: 600px){
-    body{
-        background-color: green;
-        display: block;
-    }
-}*/
+
+footer>ul:nth-of-type(1) img {
+    max-width: 1.5em;
+    height: auto;
+    margin-top: 1em;
+}
+
+
+/*Home en location icon*/
+footer>ul:last-of-type {
+    background-color: var(--background-color);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    position: fixed;
+    gap: 4em;
+    margin: 0;
+    padding: 0.6em;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>ul:last-of-type img {
+    display: block;
+    width: 4em;
+    margin: 0;
+    height: 10vh;
+}
