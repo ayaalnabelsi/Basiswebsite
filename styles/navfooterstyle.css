@@ -18,7 +18,6 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-
     color-scheme: light dark;
     --color-8: light-dark(#006241, gold);
 
@@ -80,10 +79,11 @@ header>a:nth-of-type(1) svg {
 
 /*menu icon*/
 nav>button {
-    width: 50px;
+    width: 4em;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
+   margin-left: 29em;
 }
 
 
@@ -91,6 +91,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
 nav ul {
@@ -100,12 +101,12 @@ nav ul {
     justify-content: center;
     flex-direction: row;
     display: flex;
-    font-size: small;
+    font-size: medium;
+    gap: 3em;
 }
 
-nav ul:nth-of-type(1) {
-    padding-left: 40px;
-}
+
+
 /*Meer&NL*/
 header details summary {
     font-family: "sodo-bold", sans-serif;
@@ -135,29 +136,56 @@ nav ul img {
     height: auto;
 }
 
-/* Pijltje Styling */
+/* Pijltje Styling 
 summary {
-    display: block;
     position: relative;
     cursor: pointer;
     padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
 }
+
+/*Geholpen door Sybren
 
 summary::after {
     content: '';
-    position: absolute;
-    right: 0;
-    top: 1em;
-    transform: translateY(-50%);
+    display: block;
     width: 0.9em;
-    height: 1em;
+    height: 5em;
     background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg');
     background-repeat: no-repeat;
     transition: transform 0.2s;
+
 }
 
+/*Geholpen door Sybren
+
 details[open]>summary::after {
+    transform: rotate(180deg);
+   
+}*/
+/*  Pijltje Styling*/
+ nav summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav summary::after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    /* i.o.m Jason & Jesse deze url in de css gelaten*/
+    background-size: cover;
+    margin-left: auto;
+    transition: 0.2s;
+    margin-left: 0.7em;
+}
+
+nav summary:hover::after {
     transform: rotate(180deg);
 }
 
@@ -255,6 +283,7 @@ footer details a {
     font-size: small;
     text-decoration: none;
     margin-bottom: 1em;
+    margin-left: 0.6em;
 }
 
 
@@ -269,8 +298,8 @@ footer summary {
 
 footer summary::after {
     content: '';
-    width: 18px;
-    height: 10px;
+    width: 12px;
+    height: 7px;
     background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
     /* i.o.m Jason & Jesse deze url in de css gelaten*/
     background-size: cover;
